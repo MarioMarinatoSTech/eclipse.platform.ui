@@ -597,8 +597,9 @@ public class JFaceResources {
 	 *
 	 * @param owner control whose disposal will trigger cleanup of everything in the
 	 *              registry.
+	 * @return LocalResourceManager
 	 */
-	static LocalResourceManager managerFor(Control owner) {
+	static public LocalResourceManager managerFor(Control owner) {
 		return new LocalResourceManager(getResources(), owner);
 	}
 	/**
